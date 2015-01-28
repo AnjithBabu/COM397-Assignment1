@@ -1,0 +1,6 @@
+c:\users\a_b\documents\visual studio 2013\Projects\Assignment1-TheDragonGame\Assignment1-TheDragonGame\bin\Assignment1-TheDragonGame.dll.config
+c:\users\a_b\documents\visual studio 2013\Projects\Assignment1-TheDragonGame\Assignment1-TheDragonGame\bin\Assignment1-TheDragonGame.dll
+c:\users\a_b\documents\visual studio 2013\Projects\Assignment1-TheDragonGame\Assignment1-TheDragonGame\bin\Assignment1-TheDragonGame.pdb
+c:\users\a_b\documents\visual studio 2013\Projects\Assignment1-TheDragonGame\Assignment1-TheDragonGame\obj\Debug\Assignment1-TheDragonGame.dll
+c:\users\a_b\documents\visual studio 2013\Projects\Assignment1-TheDragonGame\Assignment1-TheDragonGame\obj\Debug\Assignment1-TheDragonGame.pdb
+C:\Users\a_b\Documents\Visual Studio 2013\Projects\Assignment1-TheDragonGame\Assignment1-TheDragonGame\obj\Debug\Assignment1-TheDragonGame.csprojResolveAssemblyReference.cache
