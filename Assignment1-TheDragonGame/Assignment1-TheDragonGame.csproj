@@ -60,9 +60,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="images\cave.bmp" />
-    <Content Include="images\hdesnbfi.bmp" />
+    <Content Include="images\cave1.png" />
+    <Content Include="images\cave2.png" />
+    <Content Include="images\path1.png" />
+    <Content Include="images\path2.png" />
     <Content Include="Web.config" />
+    <Content Include="fonts\BLKCHCRY.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
