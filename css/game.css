@@ -1,12 +1,6 @@
 ﻿body {
-background: #b5bdc8;
-background: -moz-radial-gradient(center, ellipse cover,  #b5bdc8 0, #828c95 36%, #28343b 100%);
-background: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0,#b5bdc8), color-stop(36%,#828c95), color-stop(100%,#28343b));
-background: -webkit-radial-gradient(center, ellipse cover,  #b5bdc8 0,#828c95 36%,#28343b 100%);
-background: -o-radial-gradient(center, ellipse cover,  #b5bdc8 0,#828c95 36%,#28343b 100%);
-background: -ms-radial-gradient(center, ellipse cover,  #b5bdc8 0,#828c95 36%,#28343b 100%);
-background: radial-gradient(ellipse at center,  #b5bdc8 0,#828c95 36%,#28343b 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 );
+    background-image: url('../images/body-bg.bmp');
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 );
 }
 
 /* Spooky Font for the game*/
@@ -27,11 +21,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
     transition: opacity 1s ease;
 }
 
-    /* styling for slides that are active*/
+/* styling for slides that are active*/
     .impress-enabled .step.active {
         opacity: 1;
     }
-
 
 /* styling for all slides */
 .slide {
@@ -95,7 +88,7 @@ div.menu {
     float:right;
 }
 
-/**/
+/*Styling to glow the button on hover*/
 .button:hover {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

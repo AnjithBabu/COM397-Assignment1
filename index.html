@@ -1,7 +1,16 @@
-﻿<!DOCTYPE html>
+﻿
+<!--
+    Author : Anjith Babu
+    Source : Base code forked from GitHub https://github.com/tsiliopoulos/theDragon
+    Updated Source : https://github.com/AnjithBabu/COM397-Assignment1
+    Version : 1.0
+    Last Modified : Anjith - January 30, 2015
+    Program Description : Following html file creates the main game html file. It includes the slides which makes the game work
+-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
     <title>The Dragon Game</title>
@@ -12,9 +21,12 @@
 </head>
 <body onload="main();">
 
-    <!--First Slide-->
+    <!--Slide Tree Starts-->
+
+    <!--Introduction Slide-->
+
     <div id="impress">
-        <div id="1" class="step slide">
+        <div id="intro" class="step slide">
             <div class="slide-text">
                 <div>
                 <p>The Dragon Game - The Spooky Mountain</p>
@@ -25,49 +37,49 @@
                     <p>Before you start a Word of advice "Don't be greedy !!!! "</p>
                 </div>
                 <div class="left">
-                    <a href="#2"><img id="img-btn" src="images/cave1.png" /> </a>
+                    <a href="#second_level1"><img id="img-btn" src="images/cave1.png" /> </a>
                 </div>
                 <div class="right">
-                    <a href="#3"><img id="img-btn" src="images/cave2.png" /></a>
+                    <a href="#second_level2"><img id="img-btn" src="images/cave2.png" /></a>
                 </div>
                 
             </div>
         </div>
     
 
-    <!--Second Slide-->
-    
-        <div id="2" class="step slide" data-x="1500" data-y="300">
+    <!--Second Level Slides-->
+        
+        <!--#1-->
+        <div id="second_level1" class="step slide" data-x="1500" data-y="300">
             <div class="slide-text">
                 <p>CAVE 1</p>
                 <p>Path 1 is to treasure and Path 2 is to the Invincible Sword</p>
                 <div class="left">
-                    <a href="#4"><img id="img-btn" src="images/path1.png" /> </a>
+                    <a href="#third_level1"><img id="img-btn" src="images/path1.png" /> </a>
                 </div>
                 <div class="right">
-                    <a href="#5"><img id="img-btn" src="images/path2.png" /></a>
+                    <a href="#third_level2"><img id="img-btn" src="images/path2.png" /></a>
                 </div>
             </div>
         </div>
-    
-    <!--Third Slide-->
-
-        <div id="3" class="step slide" data-x="-1500" data-y="300">
+        <!--#2-->
+        <div id="second_level2" class="step slide" data-x="-1500" data-y="300">
             <div class="slide-text">
                 <p>CAVE 2</p>
                 <p>Path 1 is to the Princess and Path 2 to get Magic Wand and Stop Dragon</p>
                 <div class="left">
-                    <a href="#6"><img id="img-btn" src="images/path1.png" /> </a>
+                    <a href="#third_level3"><img id="img-btn" src="images/path1.png" /> </a>
                 </div>
                 <div class="right">
-                    <a href="#7"><img id="img-btn" src="images/path2.png" /></a>
+                    <a href="#third_level4"><img id="img-btn" src="images/path2.png" /></a>
                 </div>
             </div>
         </div>
 
-    <!--Fourth Slide-->
+    <!--Third decision level slides-->
 
-        <div id="4" class="step slide" data-x="3000" data-y="600">
+        <!--#1-->
+        <div id="third_level1" class="step slide" data-x="3000" data-y="600">
             <div class="slide-text">
                 <p>The Treasure</p>
                 <p>Path 1 is a shortcut to Castle and Path 2 is way to the horses</p>
@@ -79,8 +91,8 @@
                 </div>
             </div>
         </div>
-        
-        <div id="5" class="step slide" data-x="-3000" data-y="600">
+        <!--#2-->
+        <div id="third_level2" class="step slide" data-x="-3000" data-y="600">
             <div class="slide-text">
                 <p>The Invincible Sword</p>
                 <p>Path 1 is to the wagon and Path 2 is to get the beautiful princess and horses</p>
@@ -93,8 +105,8 @@
             </div>
         </div>
 
-
-        <div id="6" class="step slide" data-x="-4500" data-y="600" data-z="200">
+        <!--#3-->
+        <div id="third_level3" class="step slide" data-x="-4500" data-y="600" data-z="200">
             <div class="slide-text">
                 <p>The Princess</p>
                 <p>Path 1 is to the Wagon and Path 2 is to the Magic Portal</p>
@@ -106,8 +118,8 @@
                 </div>
             </div>
         </div>
-
-        <div id="7" class="step slide" data-x="4500" data-y="600" data-z="200">
+        <!--#4-->
+        <div id="third_level4" class="step slide" data-x="4500" data-y="600" data-z="200">
             <div class="slide-text">
                 <p>Magic wand</p>
                 <p>Path 1 is to the escape portal and Princess  and  Path 2 is to Save the Kingdom and Stop the Dragon</p>
@@ -120,12 +132,14 @@
             </div>
         </div>
 
+    <!--Final Levels -->
+
         <div id="last_level1" class="step slide" data-x="6000" data-y="600" data-rotate-x="90">
             <div class="slide-text">
                 <p>Ohhh!!! You end up in dark forest</p>
                 <img src="images/dark_forest.bmp" />
                 <div class="button">
-                    <a href="#1">Start Over</a>
+                    <a href="#intro">Start Over</a>
                 </div>
             </div>
         </div>
@@ -135,7 +149,7 @@
                 <p>Ohhh!!! Witch Catches you</p>
                 <img src="images/witch.bmp" />
                 <div class="button">
-                    <a href="#1">Start Over</a>
+                    <a href="#intro">Start Over</a>
                 </div>
             </div>
         </div>
@@ -145,7 +159,7 @@
                 <p>Ohhh!!! The Demon catches you</p>
                 <img src="images/deamon.bmp" />
                 <div class="button">
-                    <a href="#1">Start Over</a>
+                    <a href="#intro">Start Over</a>
                 </div>
             </div>
         </div>
@@ -155,7 +169,7 @@
                 <p>Ohhh!!! The enemies catches</p>
                 <img src="images/enemies.bmp" />
                 <div class="button">
-                    <a href="#1">Start Over</a>
+                    <a href="#intro">Start Over</a>
                 </div>
             </div>
         </div>
@@ -164,7 +178,7 @@
             <div class="slide-text">
                 <p>Ohhh!!! There is no wagon and you are lost</p>
                 <div class="button">
-                    <a href="#1">Start Over</a>
+                    <a href="#intro">Start Over</a>
                 </div>
             </div>
         </div>
@@ -174,7 +188,7 @@
                 <p>Ohhh!!! You end up in old era Triclopse</p>
                 <img src="images/triclopse.bmp" />
                 <div class="button">
-                    <a href="#1">Start Over</a>
+                    <a href="#intro">Start Over</a>
                 </div>
             </div>
         </div>
@@ -184,28 +198,28 @@
                 <p>Ohhh!!! You end up with Dragon and it eats you</p>
                 <img src="images/dragon.bmp" />
                 <div class="button">
-                    <a href="#1">Start Over</a>
+                    <a href="#intro">Start Over</a>
                 </div>
             </div>
         </div>
-
+        <!-- Success Level-->
         <div id="last_level8" class="step slide" data-y="9000">
             <div class="slide-text">
                 <p>Hoorray !!! You Won. Princess is there. You defeat the dragon and get the princess and Kingdom. The End</p>
                 <img src="images/princess.gif" />
                 <div class="button">
-                    <a href="#1">Start Over</a>
+                    <a href="#intro">Start Over</a>
                 </div>
             </div>
         </div>
     </div>
-
+    <!--End of level slides-->
 
 
     <!-- JavaScript Section-->
     <script src="Scripts/lib/game.js"></script>
     <script src="Scripts/lib/impress.js"></script>
-    <script>impress().init</script>
+    <script>main();</script>
     
 </body>
 </html>
